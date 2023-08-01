@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropbox{
+    background-color: palegreen;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drophidden{
+    display: none;
+}
+.drophidden.show{
+    display: block;
+}
