@@ -16,22 +16,128 @@
 <body class="bg-info">
     <div class="w-50 container p-5 mt-5 bg-secondary rounded">
         <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="inputN" placeholder="Nhập vào số nguyên n">
+            <div class="form-group input">
+                <div class="boxshadow">
+                    <input type="text" class="form-control" id="inputN" placeholder="Nhập vào số n">
+                </div>
+                <button type="button" class="btn btn-primary" id="btnOutput">Thêm số </button>
             </div>
+
             <p class="alert alert-danger" id="txtOutput">👉</p>
-            <button type="button" class="btn btn-primary" id="btnOutput">Thêm số </button>
+
         </form>
 
-        <div class="dropbox mt-3" id="dropMain">
+        <div class="dropbox mt-3" id="showSum">
             <span>1️⃣ Tổng số dương</span>
             <i class="fa-solid fa-angle-down"></i>
         </div>
-        <div class="drophidden" id="dropH">
-            <button class="btn btn-primary mt-3 mb-3" id="btnSum">Tính tổng</button>
-            <p class="alert alert-primary" id="sumDuong">👉</p>
+        <div class="overflow" id="sumSoDuong">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3" id="btnSum">Tính tổng</button>
+                <p class="alert alert-primary active" id="sumDuong">👉</p>
+            </div>
         </div>
 
+        <div class="dropbox mt-3" id="clickDem">
+            <span>2️⃣ Đếm số dương</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="demSoDuong">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnDem">Đếm số</button>
+                <p class="alert alert-primary" id="sumDem">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickTimSNN">
+            <span>3️⃣ Tìm số nhỏ nhất</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="timSNN">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnTimSNN">Tìm số nhỏ nhất</button>
+                <p class="alert alert-primary" id="sumTimSNN">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickTimSDNN">
+            <span>4️⃣ Tìm số dương nhỏ nhất</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="timSDNN">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnTimSDNN">Tìm số dương nhỏ nhất</button>
+                <p class="alert alert-primary" id="sumTimSDNN">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickTimSoChan">
+            <span>5️⃣ Tìm số chẳn cuối cùng</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="timSoChan">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnTimSoChan">Tìm số chẳn cuối cùng</button>
+                <p class="alert alert-primary" id="sumTimSoChan">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickDoiCho">
+            <span>6️⃣ Đổi chỗ</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="doiCho">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnDoiCho">Đổi chỗ</button>
+                <p class="alert alert-primary" id="sumDoiCho">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickSSepTang">
+            <span>7️⃣ Sắp xếp tăng dần</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="SSepTang">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnSSepTang">Sắp xếp tăng dần</button>
+                <p class="alert alert-primary" id="sumSSepTang">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickTimSoNguyenTo">
+            <span>8️⃣ Tìm số nguyên tố đầu tiên</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="timSoNguyenTo">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnTimSoNguyenTo">Tìm số nguyên tố đầu
+                    tiên</button>
+                <p class="alert alert-primary" id="sumTimSoNguyenTo">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickDemSoNguyen">
+            <span>9️⃣ Đếm số nguyên</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="DemSoNguyen">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnDemSoNguyen">Đếm số nguyên</button>
+                <p class="alert alert-primary" id="sumDemSoNguyen">👉</p>
+            </div>
+        </div>
+
+        <div class="dropbox mt-3" id="clickSSAmDuong">
+            <span>🔟 So sánh số lượng số âm và dương</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="overflow" id="SSAmDuong">
+            <div class="drophidden">
+                <button class="btn btn-primary mt-3 mb-3 active" id="btnSSAmDuong">So sánh số lượng số âm và
+                    dương</button>
+                <p class="alert alert-primary" id="sumSSAmDuong">👉</p>
+            </div>
+        </div>
 
 
     </div>
@@ -48,9 +154,13 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/soChanCuoiCung.js"></script>
+    <script src="js/soDuongNN.js"></script>
+    <script src="js/soNhoNhat.js"></script>
     <script src="./js/dropdowns.js"></script>
     <script src="./js/sumN.js"></script>
+    <script src="js/demSoDuong.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

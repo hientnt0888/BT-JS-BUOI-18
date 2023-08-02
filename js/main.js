@@ -2,8 +2,7 @@ var arrayList = [];
 
 
 function taoMang() {
-    var n = document.querySelector("#inputN").value;
-    n = parseInt(n);
+    var n = Number(document.querySelector("#inputN").value);
     arrayList.push(n)
     document.querySelector("#txtOutput").innerHTML = "👉  " + arrayList;
 

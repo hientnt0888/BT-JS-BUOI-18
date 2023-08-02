@@ -3,17 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.dropbox{
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+.dropbox {
     background-color: palegreen;
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.drophidden{
-    display: none;
+
+.overflow{
+
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
 }
-.drophidden.show{
-    display: block;
+.overflow.show {
+    height: 130px;
+}
+
+.input{
+    display: flex;
+}
+#inputN{
+    width: 300px;
+    margin-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset 0px 0px 20px 22px rgba(0,0,0,0.1);
+
+}
+#inputN::placeholder{
+    font-size: 18px;
+}
+.boxshadow{
 }
