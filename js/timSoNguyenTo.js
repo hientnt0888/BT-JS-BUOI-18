@@ -11,7 +11,7 @@ function demSoNguyenTo() {
                 break;
             }
         }
-        if (check && arrayListCopy[index] > 1) {
+        if (check && arrayListCopy[index] > 1 && Number.isInteger(arrayListCopy[index])) {
             document.querySelector("#sumTimSoNguyenTo").innerHTML = "👉 Số nguyên tố là: " + arrayListCopy[index];
             break;
         } else {
