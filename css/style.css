@@ -32,7 +32,7 @@ body{
 .input{
     display: flex;
 }
-#inputN{
+.inputN{
     width: 300px;
     margin-right: 40px;
     padding-top: 10px;
@@ -43,5 +43,16 @@ body{
 #inputN::placeholder{
     font-size: 18px;
 }
-.boxshadow{
+#doiCho.show{
+    height: 190px;
+}
+#doiCho .inputDC{
+    display: flex;
+    padding-top: 20px;
+}
+#DemSoNguyen.show{
+    height: 290px;
+}
+#DemSoNguyen form{
+    margin-top: 20px;
 }

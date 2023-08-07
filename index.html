@@ -18,7 +18,7 @@
         <form>
             <div class="form-group input">
                 <div class="boxshadow">
-                    <input type="text" class="form-control" id="inputN" placeholder="Nhập vào số n">
+                    <input type="text" class="form-control inputN" id="inputN" placeholder="Nhập vào số n">
                 </div>
                 <button type="button" class="btn btn-primary" id="btnOutput">Thêm số </button>
             </div>
@@ -87,6 +87,10 @@
             <i class="fa-solid fa-angle-down"></i>
         </div>
         <div class="overflow" id="doiCho">
+            <div class="inputDC">
+                <input type="text" class="form-control inputN" id="input1" placeholder="Nhập vào vị trí số 1">
+                <input type="text" class="form-control inputN" id="input2" placeholder="Nhập vào vị trí số 2">
+            </div>
             <div class="drophidden">
                 <button class="btn btn-primary mt-3 mb-3 active" id="btnDoiCho">Đổi chỗ</button>
                 <p class="alert alert-primary" id="sumDoiCho">👉</p>
@@ -121,6 +125,15 @@
             <i class="fa-solid fa-angle-down"></i>
         </div>
         <div class="overflow" id="DemSoNguyen">
+            <form>
+                <div class="form-group input">
+                    <div class="boxshadow">
+                        <input type="text" class="form-control inputN" id="input9" placeholder="Nhập vào số n">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnOutput9">Thêm số </button>
+                </div>
+                <p class="alert alert-danger" id="txtOutput9">👉</p>
+            </form>
             <div class="drophidden">
                 <button class="btn btn-primary mt-3 mb-3 active" id="btnDemSoNguyen">Đếm số nguyên</button>
                 <p class="alert alert-primary" id="sumDemSoNguyen">👉</p>
@@ -154,6 +167,11 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <script src="js/demSoNguyen.js"></script>
+    <script src="js/timSoNguyenTo.js"></script>
+    <script src="js/doiCho.js"></script>
+    <script src="js/SSAmDuong.js"></script>
+    <script src="js/SSTang.js"></script>
     <script src="js/soChanCuoiCung.js"></script>
     <script src="js/soDuongNN.js"></script>
     <script src="js/soNhoNhat.js"></script>
