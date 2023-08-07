@@ -1,12 +1,9 @@
 function timSoDuongNN() {
     var arraySoDuong = [];
-    var arrayListCopy = [];
-    for (var i = 0; i < arrayList.length; i++) {
-        arrayListCopy.push(arrayList[i]);
-    }
-    for (var index = 0; index < arrayListCopy.length; index++) {
-        if (arrayListCopy[index] > 0) {
-            arraySoDuong.push(arrayListCopy[index]);
+
+    for (var index = 0; index < arrayList.length; index++) {
+        if (arrayList[index] > 0) {
+            arraySoDuong.push(arrayList[index]);
         }
     }
     var count = arraySoDuong[0];
